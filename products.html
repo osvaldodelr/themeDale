@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- My Styles CSS -->
+    <link href="assets/vendor/bootstrap5/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/main-styles.css" rel="stylesheet">
+    <link href="assets/css/products.css" rel="stylesheet">
+
+    <title>Dale! Articulos</title>
+</head>
+
+<body>
+    <!--NAV BAR-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark-blue fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/img/LogoDaleRD.svg" alt="" width="50" height="44"
+                    class="d-inline-block align-text-middle">
+                DaleRD
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <!-- <a class="nav-link active" aria-current="page" href="#">Home</a> -->
+                    </li>
+                    <li class="nav-item">
+                        <!-- <a class="nav-link" href="#">Link</a> -->
+                    </li>
+                    <li class="nav-item">
+                        <!-- <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a> -->
+                    </li>
+                </ul>
+            </div>
+            <form class="d-flex search-form w-100 w-md-auto">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <!--/NAV BAR-->
+
+    <section class="product-container">
+        <!-- Galería de imágenes -->
+        <article class="gallery">
+            <div class="filmstrip"></div>
+            <div class="main-container">
+                <img class="main-image" alt="Main Image">
+                <div class="nav-buttons">
+                    <button id="prev" disabled>
+                        <svg class="icon-prev">
+                            <use href="/assets/vendor/svg/sprite-osv1.0.svg#icon-prev"></use>
+                        </svg>
+                    </button>
+                    <button id="next">
+                        <svg class="icon-next">
+                            <use href="/assets/vendor/svg/sprite-osv1.0.svg#icon-next"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </article>
+
+        <!-- Descripción del producto -->
+        <article class="product-info">
+            <div class="title">Apple iPhone 11 - A2111 Unlocked Verizon, AT&T, T-Mobile</div>
+            <div class="subtitle">FREE Shipping │1 YEAR WARRANTY 30 Days Return</div>
+            
+            <hr>
+            <div class="seller-info">
+                <img class="seller-avatar" src="assets/img/pf-1.jpg"
+                    alt="Seller Avatar">
+                <div>
+                    <div class="seller-name">Nikaforos (59901)</div>
+                    <ul class="seller-rating">
+                            <li>99% Positive</li>
+                            <li>Seller's other items</li>
+                            <li>Contact seller</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+
+            <div class="price">
+                <p class="rd-price">RD$ 13,020.95</p>
+                <p class="us-price">(Aproximadamente US $209.89)</p>
+            </div>
+            <div class="condition"><b>Condicion: </b>Usado</div>
+            <div class="quantity">
+                <div class="quantity-label">Cantidad:</div>
+                <input class="quantity-input" type="number" value="1">
+                <span>4 disponible / 250 vendidos</span>
+            </div>
+
+            <div class="buy-buttons d-flex flex-column">
+                <button class="btn btn-success btn-lg rounded-pill">Comprar Ahora 
+                    <svg class="icon-ws">
+                        <use href="/assets/vendor/svg/sprite-osv1.0.svg#icon-ws"></use>
+                    </svg>
+                </button>
+                <!-- <button class="btn-outline-primary btn-lg rounded-pill">Add to cart</button> -->
+                <!-- <button class="btn-outline-primary btn-lg rounded-pill">Add to Watchlist</button> -->
+            </div>
+
+            <div class="shipping"><b>Envio: </b> disponible en Rep. Dominicana</div>
+        </article>
+    </section>
+
+    <!-- Agregar la estructura de la ventana modal de Bootstrap -->
+    <section class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center p-0 m-0">
+                    <img id="modalImage" class="img-fluid" alt="Expanded Image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Template Main JS File -->
+    <script src="assets/vendor/bootstrap5/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- My Styles CSS -->
+  <link href="assets/vendor/bootstrap5/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/css/main-styles.css" rel="stylesheet">
+  <!-- <link href="assets/css/main.css" rel="stylesheet"> -->
+
+  <title>DaleRD</title>
+</head>
+
+<body>
+
+  <!--NAV BAR-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark-blue sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="assets/img/LogoDaleRD.svg" alt="" width="50" height="44" class="d-inline-block align-text-middle">
+        DaleRD
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <!-- <a class="nav-link active" aria-current="page" href="#">Home</a> -->
+          </li>
+          <li class="nav-item">
+            <!-- <a class="nav-link" href="#">Link</a> -->
+          </li>
+          <li class="nav-item">
+            <!-- <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a> -->
+          </li>
+        </ul>
+      </div>
+      <form class="d-flex search-form w-100 w-md-auto">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
+        <a class="btn btn-outline-success" href="results.html">Search</a>
+      </form>
+    </div>
+  </nav>
+  <!--/NAV BAR-->
+
+  <!-- Carousel Container LARGE -->
+  <div class="carousel-container">
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active gradient" data-bs-interval="5000">
+          <img src="/assets/img/Amazon-img001.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item gradient" data-bs-interval="5000">
+          <img src="/assets/img/Amazon-img002.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item gradient" data-bs-interval="5000">
+          <img src="/assets/img/Amazon-img003.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item gradient" data-bs-interval="5000">
+          <img src="/assets/img/Amazon-img004.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item gradient" data-bs-interval="5000">
+          <img src="/assets/img/Amazon-img005.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item gradient" data-bs-interval="5000">
+          <img src="/assets/img/Amazon-img006.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- Card Container -->
+    <div class="container-fluid card-container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-11 container-flex">
+
+          <div class="card">
+            <div class="card-image">
+              <img src="https://picsum.photos/200/300?random=10" alt="Imagen 1">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Tarjeta 1</h5>
+              <p class="card-text">Contenido de la tarjeta 1.</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-image">
+              <img src="https://picsum.photos/200/300?random=11" alt="Imagen 1">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Tarjeta 2</h5>
+              <p class="card-text">Contenido de la tarjeta 2.</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-image">
+              <img src="https://picsum.photos/200/300?random=12" alt="Imagen 1">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Tarjeta 3</h5>
+              <p class="card-text">Contenido de la tarjeta 3.</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-image">
+              <img src="https://picsum.photos/200/300?random=13" alt="Imagen 1">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Tarjeta 4</h5>
+              <p class="card-text">Contenido de la tarjeta 4.</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-image">
+              <img src="https://picsum.photos/200/300?random=14" alt="Imagen 1">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Tarjeta 5</h5>
+              <p class="card-text">Contenido de la tarjeta 5.</p>
+            </div>
+          </div>
+
+          <!-- Carousel Small - Se comportará como una tarjeta ocupando el ancho completo -->
+          <div class="carousel-small">
+            <div class="carousel-images">
+              <img src="https://picsum.photos/200/300?random=40" alt="Imagen 1">
+              <img src="https://picsum.photos/200/300?random=41" alt="Imagen 2">
+              <img src="https://picsum.photos/200/300?random=42" alt="Imagen 3">
+              <img src="https://picsum.photos/200/300?random=43" alt="Imagen 4">
+              <img src="https://picsum.photos/200/300?random=44" alt="Imagen 5">
+              <img src="https://picsum.photos/200/300?random=45" alt="Imagen 6">
+              <img src="https://picsum.photos/200/300?random=46" alt="Imagen 7">
+              <img src="https://picsum.photos/200/300?random=47" alt="Imagen 8">
+              <img src="https://picsum.photos/200/300?random=48" alt="Imagen 9">
+              <img src="https://picsum.photos/200/300?random=49" alt="Imagen 10">
+              <img src="https://picsum.photos/200/300?random=50" alt="Imagen 11">
+              <img src="https://picsum.photos/200/300?random=51" alt="Imagen 12">
+              <img src="https://picsum.photos/200/300?random=52" alt="Imagen 13">
+              <img src="https://picsum.photos/200/300?random=53" alt="Imagen 14">
+              <img src="https://picsum.photos/200/300?random=54" alt="Imagen 15">
+              <img src="https://picsum.photos/200/300?random=55" alt="Imagen 16">
+            </div>
+
+            <!-- Botones de control -->
+            <div class="carousel-controls">
+              <button class="prev">❮</button>
+              <button class="next">❯</button>
+            </div>
+          </div>
+
+          <!-- Otras tarjetas -->
+          <div class="card">
+            <div class="card-image">
+              <img src="https://picsum.photos/200/300?random=1" alt="Imagen 1">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Tarjeta 1</h5>
+              <p class="card-text">Contenido de la tarjeta 1.</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-image">
+              <img src="https://picsum.photos/200/300?random=2" alt="Imagen 1">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Tarjeta 2</h5>
+              <p class="card-text">Contenido de la tarjeta 2.</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-image">
+              <img src="https://picsum.photos/200/300?random=3" alt="Imagen 1">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Tarjeta 3</h5>
+              <p class="card-text">Contenido de la tarjeta 3.</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-image">
+              <img src="https://picsum.photos/200/300?random=4" alt="Imagen 1">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Tarjeta 4</h5>
+              <p class="card-text">Contenido de la tarjeta 4.</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-image">
+              <img src="https://picsum.photos/200/300?random=5" alt="Imagen 1">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Tarjeta 5</h5>
+              <p class="card-text">Contenido de la tarjeta 5.</p>
+            </div>
+          </div>
+
+
+          <!-- Carousel Small - Se comportará como una tarjeta ocupando el ancho completo -->
+          <div class="carousel-small">
+            <div class="carousel-images">
+              <img src="https://picsum.photos/200/300?random=20" alt="Imagen 1">
+              <img src="https://picsum.photos/200/300?random=21" alt="Imagen 2">
+              <img src="https://picsum.photos/200/300?random=22" alt="Imagen 3">
+              <img src="https://picsum.photos/200/300?random=23" alt="Imagen 4">
+              <img src="https://picsum.photos/200/300?random=24" alt="Imagen 5">
+              <img src="https://picsum.photos/200/300?random=25" alt="Imagen 6">
+              <img src="https://picsum.photos/200/300?random=26" alt="Imagen 7">
+              <img src="https://picsum.photos/200/300?random=27" alt="Imagen 8">
+              <img src="https://picsum.photos/200/300?random=28" alt="Imagen 9">
+              <img src="https://picsum.photos/200/300?random=29" alt="Imagen 10">
+              <img src="https://picsum.photos/200/300?random=30" alt="Imagen 11">
+              <img src="https://picsum.photos/200/300?random=31" alt="Imagen 12">
+              <img src="https://picsum.photos/200/300?random=32" alt="Imagen 13">
+              <img src="https://picsum.photos/200/300?random=33" alt="Imagen 14">
+              <img src="https://picsum.photos/200/300?random=34" alt="Imagen 15">
+              <img src="https://picsum.photos/200/300?random=35" alt="Imagen 16">
+            </div>
+
+            <!-- Botones de control -->
+            <div class="carousel-controls">
+              <button class="prev">❮</button>
+              <button class="next">❯</button>
+            </div>
+          </div>
+
+
+          <div class="card">
+            <div class="card-image">
+              <img src="https://picsum.photos/200/300?random=7" alt="Imagen 1">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Tarjeta 6</h5>
+              <p class="card-text">Contenido de la tarjeta 6.</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-image">
+              <img src="https://picsum.photos/200/300?random=8" alt="Imagen 1">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Tarjeta 7</h5>
+              <p class="card-text">Contenido de la tarjeta 7.</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-image">
+              <img src="https://picsum.photos/200/300?random=9" alt="Imagen 1">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Tarjeta 8</h5>
+              <p class="card-text">Contenido de la tarjeta 8.</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-image">
+              <img src="https://picsum.photos/200/300?random=10" alt="Imagen 1">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Tarjeta 9</h5>
+              <p class="card-text">Contenido de la tarjeta 9.</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-image">
+              <!-- <img src="/assets/img/dears/p5.jpg" alt="Imagen 1"> -->
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Tarjeta 10</h5>
+              <p class="card-text">Contenido de la tarjeta 10.</p>
+            </div>
+          </div>
+          <!-- /Más tarjetas aquí -->
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="assets/vendor/bootstrap5/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/carousel-sm.js"></script>
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

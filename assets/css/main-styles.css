@@ -1,0 +1,392 @@
+/*
+╔═════════════════════════════════════╗
+║         /styles-desktop.css         ║
+╚═════════════════════════════════════╝
+*/
+
+/*================================================
+Estilos para desktop size minimo pantalla 577px
+================================================*/
+@media screen and (min-width: 577px) {
+  body {
+    background-color: #e3e6e6;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  /* Definir el color personalizado */
+  .custom-dark-blue {
+    color: #233452;
+    /* Color para el texto */
+  }
+
+  .bg-dark-blue {
+    background-color: #233452;
+    /* Color de fondo */
+  }
+
+  /* Ejemplo de botón oscuro */
+  .custom-btn-dark-blue {
+    background-color: #233452;
+    color: white;
+  }
+
+  /* Carousel Grande */
+  .carousel-item {
+    position: relative;
+  }
+
+  .carousel-item img {
+    width: 100%;
+    height: auto;
+  }
+
+  .gradient::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30%;
+    background: linear-gradient(to bottom, transparent, rgba(227, 230, 230, 1));
+    pointer-events: none;
+  }
+
+  /* Contenedor de las tarjetas */
+  .card-container {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    bottom: 200px;
+  }
+
+  .container-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.20%;
+  }
+
+  /* Estilos de las tarjetas */
+  body:not(.results-page) .card {
+    width: 18%;
+    /* Ajusta el tamaño de la tarjeta según sea necesario */
+    height: auto;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+  }
+
+  body:not(.results-page) .card img {
+    width: 100%;
+    height: 400px;
+    display: block;
+  }
+
+  body:not(.results-page) .card-body {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    /* Fondo semitransparente para mejorar la legibilidad */
+    padding: 10px;
+  }
+
+
+  .carousel-images {
+    display: flex;
+    transition: transform 1.5s ease;
+  }
+
+  .carousel-images img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .carousel-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+  }
+
+  .prev,
+  .next {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+}
+
+
+
+/*
+╔═════════════════════════════════════╗
+║         /styles-mobiles.css         ║
+╚═════════════════════════════════════╝
+*/
+
+/*=========================================
+Estilos para mobiles max pantalla 576px 
+=========================================*/
+@media screen and (max-width: 576px) {
+
+  /* Estilos básicos para el cuerpo */
+  body {
+    background-color: #e3e6e6;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  /* Definir el color personalizado */
+  .custom-dark-blue {
+    color: #233452;
+    /* Color para el texto */
+  }
+
+  .bg-dark-blue {
+    background-color: #233452;
+    /* Color de fondo */
+  }
+
+  /* Ejemplo de botón oscuro */
+  .custom-btn-dark-blue {
+    background-color: #233452;
+    color: white;
+  }
+
+  /* Carousel Grande */
+  .carousel-item {
+    position: relative;
+  }
+
+  .carousel-item img {
+    width: 100%;
+    height: auto;
+  }
+
+  .gradient::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30%;
+    background: linear-gradient(to bottom, transparent, rgba(227, 230, 230, 1));
+    pointer-events: none;
+  }
+
+
+
+  /* Contenedor de las tarjetas */
+  .container-flex {
+    flex-direction: column;
+    /* Apilar las tarjetas */
+    align-items: center;
+    /* Centrar las tarjetas */
+  }
+
+  body:not(.results-page) .card {
+    width: 100%;
+    /* Ancho fijo */
+    height: 200px;
+    /* Alto fijo */
+  }
+
+  body:not(.results-page) .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    /* Asegurar que la imagen llene la tarjeta */
+  }
+
+  body:not(.results-page) .card-body {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    /* Fondo semitransparente */
+    padding: 10px;
+  }
+
+
+
+  /* Estilos para el carousel pequeño (se comporta como una tarjeta más) */
+  .carousel-small {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  .carousel-images {
+    display: flex;
+    transition: transform 1.5s ease;
+  }
+
+  .carousel-images img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .carousel-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+  }
+
+
+  .prev,
+  .next {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+}
+
+
+
+/*
+╔═════════════════════════════════════╗
+║          /carousel-sm.css           ║
+╚═════════════════════════════════════╝
+*/
+
+/*=====================================================
+/*Estilos carousel desktop size minimo pantalla 577px
+=====================================================*/
+@media screen and (min-width: 577px) {
+
+  .carousel-small {
+    width: 90.7%;
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin: 20px auto;
+  }
+
+  .carousel-images {
+    display: flex;
+    transition: transform 1.5s ease;
+  }
+
+  .carousel-images img {
+    width: 25%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .carousel-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+  }
+
+  .prev,
+  .next {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+}
+
+/*================================================
+Estilos carousel Mobil size maximo pantalla 576px
+=================================================*/
+@media screen and (max-width: 576px) {
+
+  .carousel-small {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin: 20px auto;
+  }
+
+  .carousel-images {
+    display: flex;
+    transition: transform 1.5s ease;
+  }
+
+  .carousel-images img {
+    width: 25%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .carousel-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+  }
+
+  .prev,
+  .next {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+}
