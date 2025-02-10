@@ -1,0 +1,2 @@
+# themeDale
+Templante ¡Dale!
