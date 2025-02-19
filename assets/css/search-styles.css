@@ -84,3 +84,18 @@ Estilos tarjetas ebay diseño
 .product-rating .stars {
   color: #f1c40f;
 }
+
+:root {
+  --navbar-height: 100px; /* Ajusta según la altura de tu navbar */
+}
+
+body {
+  padding-top: var(--navbar-height);
+}
+
+/* Para dispositivos más pequeños */
+@media (max-width: 576px) {
+  body {
+      padding-top: 130px; /* Ajusta según el tamaño del navbar en móviles */
+  }
+}
